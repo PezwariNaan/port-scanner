@@ -20,8 +20,6 @@ async fn main() {
     println!("Scanning IP: {}", args.ip);
     println!("Scanning Ports: {:?}", args.ports);
 
-    let open_ports = scanner::scan_ports(&args.ip, args.ports).await;
-    let banners = scanner::grab_banners(&args.ip, open_ports[0]).await;
+    let _open_ports = scanner::scan_ports(&args.ip, args.ports).await;
 
-    banners.iter().for_each(|banner| println!("{:?}", banner));
 }
