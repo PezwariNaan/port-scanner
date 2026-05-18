@@ -187,17 +187,12 @@ This allows protocol-specific probing logic to be added easily.
 * HTTPS/TLS fingerprinting
 * SSH probe support
 * UDP scanning
-* Async semaphore limiting
 * Pretty terminal output
 * JSON output
-* XML output
-* Topology mapping
 * Service fingerprinting
 * OS fingerprinting
 * Raw SYN scanning
 * ICMP discovery
-* ARP scanning
-* Plugin architecture
 
 ---
 
