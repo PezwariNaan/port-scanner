@@ -17,9 +17,5 @@ struct Args {
 async fn main() {
     let args = Args::parse();
 
-    println!("Scanning IP: {}", args.ip);
-    println!("Scanning Ports: {:?}", args.ports);
-
-    let _open_ports = scanner::scan_ports(&args.ip, args.ports).await;
-
+    let _open_ports = scanner::scan_ips(&args.ip, args.ports).await;
 }
